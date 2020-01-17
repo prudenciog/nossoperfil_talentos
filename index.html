@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="./indexStyle.css">
+	<title>Nosso perfil</title>
+
+	<!-- Script Para Loading - Interno no HTML devido a pouco código -->
+	<script>
+	$(window).on('load', function () {
+		$('#loading .inner').fadeOut();
+		$('#loading').delay(850).fadeOut('slow'); 
+		$('body').delay(850).css({'overflow': 'visible'});
+	})
+	</script>
+	<!-- -->
+</head>
+
+<body style="background-image:url('img/background.jpeg');">
+	<!-- Simulação de Loading -->
+	<div id="loading">
+		<div class="inner">
+			<div class="circles">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+	<!-- -->
+
+	<div class="fadeIn">
+		<!-- Logo Site -->
+		<div class="row">
+			<div class="col-12">
+				<div class="text-center">
+					<img src="./img/logo.png" width="350" class="fadeImg2" />
+				</div>
+			</div>
+		</div>
+		<!-- -->
+		<!-- Imagem Topo -->
+		<div class="row justify-content-center">
+			<div class="col-3">
+				<div class="container">
+					<div class="text-center marginImgAfterLogo">
+						<img src="./img/marcos.png" width="200" height="200" class="avatar fadeImg" />
+						<div class="overlay" style="width: 200px;height: 200px;margin: auto;">
+							<a href="marcos.html"><div class="text">Marcos</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="container">
+					<div class="text-center marginImgAfterLogo">
+						<img src="./img/alisson.jpg" width="200" height="200" class="avatar fadeImg2" />
+						<div class="overlay" style="width: 200px;height: 200px;margin: auto;">
+							<a href="alisson.html"><div class="text">Alisson</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- -->
+		<div class="row">
+			<div class="col-12">
+				<div class="text-center marginStag">
+					<h2 class="fontEstagiarios fadeImg2">Estagiários</h2>
+				</div>
+			</div>
+		</div>
+
+		<!-- Primeira 'ROW' de imagens -->
+		<div class="row marginStag">
+			<div class="col-4">
+				<div class="container">
+					<div class="text-center marginImgAfterLogo">
+						<img src="./img/allef.jpg" width="200" height="200" class="avatar fadeImg" />
+						<div class="overlay" style="width: 200px;height: 200px;margin: auto;">
+							<a href="allef.html" target="_blank"><div class="text">Allef</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="container">
+					<div class="text-center marginImgAfterLogo">
+						<img src="./img/ana.jpg" width="200" height="200" class="avatar fadeImg" />
+						<div class="overlay" style="width: 200px;height: 200px;margin: auto;">
+							<a href="ana.html" target="_blank"><div class="text">Ana</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="container">
+					<div class="text-center marginImgAfterLogo">
+						<img src="./img/gerson.jpg" width="200" height="200" class="avatar fadeImg" />
+						<div class="overlay" style="width: 200px;height: 200px;margin: auto;">
+							<a href="gerson.html" target="_blank"><div class="text">Gerson</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- -->
+
+		<!-- Segunda 'ROW' de imagens -->
+		<div class="row marginStag">
+			<div class="col-6">
+				<div class="container">
+					<div class="text-center marginImgAfterLogo">
+						<img src="./img/leonardo.jpeg" width="200" height="200" class="avatar fadeImg" />
+						<div class="overlay" style="width: 200px;height: 200px;margin: auto;">
+							<a href="leonardo.html" target="_blank"><div class="text">Leonardo</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="container">
+					<div class="text-center marginImgAfterLogo">
+						<img src="./img/luli.jpeg" width="200" height="200" class="avatar fadeImg" />
+						<div class="overlay" style="width: 200px;height: 200px;margin: auto;">
+							<a href="luiza.html" target="_blank"><div class="text">Luiza</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---->
+	</div>
+</body>
+
+</html>

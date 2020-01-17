@@ -1,0 +1,186 @@
+body {
+    background-color: black;
+    overflow-x: hidden !important;
+  }
+
+.avatar{
+    border-radius: 50% 50%;
+    box-shadow: 4px 4px 12px white;
+
+  }
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 50%;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+    background-color:rgb(0,0,0, 0.9);
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .marginImgAfterLogo{
+      margin-top: 10px;
+  }
+
+  .marginStag{
+      margin-top: 20px;
+  }
+
+  .fontEstagiarios{
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+  }
+
+  /* Animações Fade In */
+
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+  }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+  }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .fadeIn {
+    -webkit-animation: fadeIn 5s ease-in-out;
+    -moz-animation: fadeIn 5s ease-in-out;
+    -o-animation: fadeIn 5s ease-in-out;
+    animation: fadeIn 5s ease-in-out;
+  }
+
+    .fadeImg {
+        opacity:0;
+        -webkit-animation: fadeIn 6s ease-in-out;
+        -moz-animation: fadeIn 6s ease-in-out;
+        -o-animation: fadeIn 6s ease-in-out;
+        animation: fadeIn 6s ease-in-out; 
+        -webkit-animation-fill-mode:forwards;
+        -moz-animation-fill-mode:forwards;
+        -o-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+  }
+        
+        .fadeImg-delay {	
+        -webkit-animation-delay:4s;
+        -moz-animation-delay:4s;
+        -o-animation-delay:4s;
+        animation-delay:4s;
+  }
+        
+        .fadeImg2 {
+        opacity:0;
+        -webkit-animation: fadeIn 1500ms linear;
+        -moz-animation: fadeIn 1500ms linear;
+        -o-animation: fadeIn 1500ms linear;
+        animation: fadeIn 1500ms linear; 
+        -webkit-animation-fill-mode:forwards;
+        -moz-animation-fill-mode:forwards;
+        -o-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+  }
+        
+        .fadeImg2-delay {	
+        -webkit-animation-delay:6s;
+        -moz-animation-delay:6s;
+        -o-animation-delay:6s;
+        animation-delay:6s;
+  }
+
+/* Fim Fade CSS */
+ 
+#loading {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: black;
+    z-index:999; 
+}
+
+#loading .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.circles > div {
+  display: inline-block;
+  background-color: #00e900;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarCirculos;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+   
+}
+.circles > div:nth-child(1) {
+    animation-duration:0.75s ;
+    animation-delay: 0;
+}
+.circles > div:nth-child(2) {
+    animation-duration: 0.75s ;
+    animation-delay: 0.12s;
+}
+.circles > div:nth-child(3) {
+    animation-duration: 0.75s  ;
+    animation-delay: 0.24s;
+}
+ 
+@keyframes animarCirculos {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  16% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  33% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; 
+  } 
+}
